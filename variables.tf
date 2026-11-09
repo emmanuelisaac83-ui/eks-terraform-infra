@@ -74,7 +74,7 @@ variable "cluster_admin_arns" {
 variable "node_instance_types" {
   description = "EC2 instance types for the managed node group"
   type        = list(string)
-  default     = ["t2.medium"]
+  default     = ["m7i-flex.large"]
 }
 
 variable "node_capacity_type" {
@@ -92,13 +92,13 @@ variable "node_disk_size" {
 variable "node_desired_size" {
   description = "Desired number of worker nodes"
   type        = number
-  default     = 5 # 4 x t2.medium hit the 17-pods-per-node limit
+  default     = 4
 }
 
 variable "node_min_size" {
   description = "Minimum number of worker nodes"
   type        = number
-  default     = 5
+  default     = 4
 }
 
 variable "node_max_size" {
