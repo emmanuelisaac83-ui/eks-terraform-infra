@@ -15,7 +15,7 @@ spec:
         - argocd.erosoft.net
       secretName: argocd-server-tls
   rules:
-    - host: argocd.erosoft.net
+    - host: argocd.erosoft.space
       http:
         paths:
           - path: /

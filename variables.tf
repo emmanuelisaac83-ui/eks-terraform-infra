@@ -167,7 +167,7 @@ variable "letsencrypt_email" {
 variable "argocd_hostname" {
   description = "Public hostname for the Argo CD UI (must match manifests/argocd-ingress.yaml)"
   type        = string
-  default     = "argocd.erosoft.net"
+  default     = "argocd.erosoft.space"
 }
 
 # ---- EFS ----
