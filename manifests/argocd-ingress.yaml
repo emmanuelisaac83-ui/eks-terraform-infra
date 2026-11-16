@@ -12,7 +12,7 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - argocd.erosoft.net
+        - argocd.erosoft.space
       secretName: argocd-server-tls
   rules:
     - host: argocd.erosoft.space
