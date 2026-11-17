@@ -1,4 +1,3 @@
-# =============================================================================
 # All outputs in one place. Show them with: terraform output
 # =============================================================================
 
@@ -45,11 +44,6 @@ output "argocd_url" {
 
 output "argocd_admin_username" {
   value = "admin"
-}
-
-output "argocd_initial_admin_password" {
-  value     = data.kubernetes_secret_v1.argocd_initial_admin.data["password"]
-  sensitive = true
 }
 
 # ---- EFS ----
